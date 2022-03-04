@@ -1,0 +1,11 @@
+<h3>Exemplo de binding de duas vias</h3>
+
+<input type="text" placeholder="Nome" 
+[(ngModel)]="nome">
+
+{{nome}}
+
+<input type="number" placeholder="valor 1"[(ngModel)] = "valor1">
+<input type="number" placeholder="valor 2"[(ngModel)] = "valor2">
+
+{{valor1 + valor2}}
