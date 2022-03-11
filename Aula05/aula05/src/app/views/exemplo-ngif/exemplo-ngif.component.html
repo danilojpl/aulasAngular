@@ -1,0 +1,25 @@
+<h3>exemplo-ngif works!</h3>
+
+<input [(ngModel)] = "nome" placeholder = "nome">
+<input [(ngModel)] = "sobrenome" placeholder = "sobrenome">
+
+<div *ngIf="nome && sobrenome">
+    nome: {{nome}}
+    sobrenome: {{sobrenome}}
+</div>
+
+<br>
+<h3>Exercício 01</h3>
+
+<input type="number" [(ngModel)]="numero"> 
+<div *ngIf="numero == 0">
+    igual a zero
+</div>
+<div *ngIf="numero < 0">
+    número negativo
+</div>
+<div *ngIf="numero > 0">
+    número positivo
+</div>
+
+

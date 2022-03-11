@@ -1,0 +1,16 @@
+<h3>ex02</h3>
+
+<input type="number" [(ngModel)]="numero1"> 
+<input type="number" [(ngModel)]="numero2"> 
+<br>
+
+<div *ngIf="numero1 && numero2">
+    <button (click)="soma()">+</button>
+    <button (click)="sub()">-</button>
+    <button (click)="div()">/</button>
+    <button (click)="mult()">*</button>
+</div>
+<h3 *ngIf="numero1 && numero2">
+    Resultado: {{result}}
+</h3>
+
