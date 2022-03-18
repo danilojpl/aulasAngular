@@ -1,0 +1,14 @@
+
+<hr>
+<div>
+<button (click)="exercicios('exemplo')">exemplo</button>
+<button (click)="exercicios('ex1')">Exercício01</button>
+</div>
+
+<div [ngSwitch]="ex">
+  <app-exemplo-ngswitch *ngSwitchCase = "'exemplo'"></app-exemplo-ngswitch>
+  <app-exercicio-ngswitch *ngSwitchCase = "'ex1'"></app-exercicio-ngswitch>
+    <div *ngSwitchDefault>Exercício não encontrado</div>
+</div>
+
+

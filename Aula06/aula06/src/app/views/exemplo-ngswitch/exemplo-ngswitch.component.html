@@ -1,0 +1,10 @@
+<h2>Exemplo ngSwitch</h2>
+
+<input type="text" [(ngModel)] = 'dog'>
+
+<div [ngSwitch]="dog">
+    <img *ngSwitchCase = "'husky'" src = "assets/husky.jpg">
+    <img *ngSwitchCase = "'pinscher'" src = "assets/pinscher.jpg">
+    <img *ngSwitchCase = "'pitbull'" src = "assets/pitbull.jpg">
+    <div *ngSwitchDefault>Cachorro não encontrado </div>
+</div>
