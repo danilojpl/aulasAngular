@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background: rgb(29,153,179);
+    background: linear-gradient(90deg, rgba(29,153,179,0.577468487394958) 1%, rgba(9,9,121,1) 35%, rgba(21,32,70,1) 91%);
+    min-height: 100%;
+}
+
+html{
+    min-height: 100%;
+}
