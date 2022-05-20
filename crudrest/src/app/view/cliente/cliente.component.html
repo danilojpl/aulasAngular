@@ -2,7 +2,7 @@
 
 <ul>
   <li *ngFor="let cliente of clientes">
-    {{cliente.cpf}} - {{cliente.nome}}
+    <span (click)="editar(cliente)">{{cliente.cpf}} - {{cliente.nome}}</span> <span style="color:red ;" (click)="excluir(cliente.id)"> X</span>
   </li>
 </ul>
 
@@ -14,3 +14,4 @@
   <br>
   <button (click)="salvar()">Salvar</button>
 </div>
+
