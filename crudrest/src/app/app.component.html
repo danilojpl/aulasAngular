@@ -1,7 +1,32 @@
 <mat-toolbar color="primary">
+  <button mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
+  </button>
   <h1>Cadastro de Clientes</h1>
 </mat-toolbar>
 
-<a routerLink="cliente">Clientes</a>
+<mat-sidenav-container>
+  <mat-sidenav mode = "side" opened="true" #sidenav>
+    <mat-nav-list >
+        <a mat-list-item routerLink="cliente">
+          <mat-icon class="menu-item">face</mat-icon>
+          Clientes
+        </a>
+        <a mat-list-item routerLink="Produto">
+          <mat-icon class="menu-item">shopping_bag</mat-icon>
+          Produto
+        </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div style = "min-height : calc(100vh - 64px); padding: 16px;">
+      <mat-card style="background-color: rgb(150, 144, 144);">
+        <router-outlet></router-outlet>
+      </mat-card>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
 
-<router-outlet></router-outlet>
+
+
+
